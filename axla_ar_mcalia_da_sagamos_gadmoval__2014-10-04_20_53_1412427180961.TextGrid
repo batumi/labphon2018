@@ -1,0 +1,66 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 17.369206349206348 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 17.369206349206348 
+        intervals: size = 13 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.292603174603175 
+            text = "utterance" 
+        intervals [2]:
+            xmin = 0.292603174603175 
+            xmax = 7.316603174603175 
+            text = "silent" 
+        intervals [3]:
+            xmin = 7.316603174603175 
+            xmax = 7.6526031746031755 
+            text = "utterance" 
+        intervals [4]:
+            xmin = 7.6526031746031755 
+            xmax = 9.652603174603176 
+            text = "silent" 
+        intervals [5]:
+            xmin = 9.652603174603176 
+            xmax = 10.484603174603176 
+            text = "utterance" 
+        intervals [6]:
+            xmin = 10.484603174603176 
+            xmax = 11.124603174603177 
+            text = "silent" 
+        intervals [7]:
+            xmin = 11.124603174603177 
+            xmax = 11.620603174603175 
+            text = "utterance" 
+        intervals [8]:
+            xmin = 11.620603174603175 
+            xmax = 12.964603174603177 
+            text = "silent" 
+        intervals [9]:
+            xmin = 12.964603174603177 
+            xmax = 13.508603174603174 
+            text = "utterance" 
+        intervals [10]:
+            xmin = 13.508603174603174 
+            xmax = 14.644603174603176 
+            text = "silent" 
+        intervals [11]:
+            xmin = 14.644603174603176 
+            xmax = 16.260603174603176 
+            text = "utterance" 
+        intervals [12]:
+            xmin = 16.260603174603176 
+            xmax = 17.092603174603177 
+            text = "silent" 
+        intervals [13]:
+            xmin = 17.092603174603177 
+            xmax = 17.369206349206348 
+            text = "utterance" 

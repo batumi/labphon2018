@@ -1,0 +1,38 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 9.924308390022675 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 9.924308390022675 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.4501541950113378 
+            text = "silent" 
+        intervals [2]:
+            xmin = 0.4501541950113378 
+            xmax = 1.5541541950113378 
+            text = "utterance" 
+        intervals [3]:
+            xmin = 1.5541541950113378 
+            xmax = 5.586154195011338 
+            text = "silent" 
+        intervals [4]:
+            xmin = 5.586154195011338 
+            xmax = 5.7461541950113375 
+            text = "utterance" 
+        intervals [5]:
+            xmin = 5.7461541950113375 
+            xmax = 9.298154195011337 
+            text = "silent" 
+        intervals [6]:
+            xmin = 9.298154195011337 
+            xmax = 9.924308390022675 
+            text = "utterance" 

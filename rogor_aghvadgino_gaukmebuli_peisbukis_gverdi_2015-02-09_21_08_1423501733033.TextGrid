@@ -1,0 +1,66 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 12.641043083900227 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 12.641043083900227 
+        intervals: size = 13 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.4005215419501133 
+            text = "silent" 
+        intervals [2]:
+            xmin = 0.4005215419501133 
+            xmax = 2.5125215419501132 
+            text = "utterance" 
+        intervals [3]:
+            xmin = 2.5125215419501132 
+            xmax = 3.3925215419501136 
+            text = "silent" 
+        intervals [4]:
+            xmin = 3.3925215419501136 
+            xmax = 6.656521541950114 
+            text = "utterance" 
+        intervals [5]:
+            xmin = 6.656521541950114 
+            xmax = 7.440521541950114 
+            text = "silent" 
+        intervals [6]:
+            xmin = 7.440521541950114 
+            xmax = 7.552521541950114 
+            text = "utterance" 
+        intervals [7]:
+            xmin = 7.552521541950114 
+            xmax = 9.120521541950115 
+            text = "silent" 
+        intervals [8]:
+            xmin = 9.120521541950115 
+            xmax = 10.112521541950112 
+            text = "utterance" 
+        intervals [9]:
+            xmin = 10.112521541950112 
+            xmax = 10.880521541950113 
+            text = "silent" 
+        intervals [10]:
+            xmin = 10.880521541950113 
+            xmax = 11.120521541950115 
+            text = "utterance" 
+        intervals [11]:
+            xmin = 11.120521541950115 
+            xmax = 11.616521541950114 
+            text = "silent" 
+        intervals [12]:
+            xmin = 11.616521541950114 
+            xmax = 11.808521541950114 
+            text = "utterance" 
+        intervals [13]:
+            xmin = 11.808521541950114 
+            xmax = 12.641043083900227 
+            text = "silent" 

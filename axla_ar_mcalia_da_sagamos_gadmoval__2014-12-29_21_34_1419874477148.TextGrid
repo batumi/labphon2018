@@ -1,0 +1,126 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 31.18798185941043 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 31.18798185941043 
+        intervals: size = 28 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.8179909297052161 
+            text = "utterance" 
+        intervals [2]:
+            xmin = 0.8179909297052161 
+            xmax = 1.233990929705216 
+            text = "silent" 
+        intervals [3]:
+            xmin = 1.233990929705216 
+            xmax = 1.3619909297052162 
+            text = "utterance" 
+        intervals [4]:
+            xmin = 1.3619909297052162 
+            xmax = 6.977990929705216 
+            text = "silent" 
+        intervals [5]:
+            xmin = 6.977990929705216 
+            xmax = 7.329990929705216 
+            text = "utterance" 
+        intervals [6]:
+            xmin = 7.329990929705216 
+            xmax = 7.953990929705216 
+            text = "silent" 
+        intervals [7]:
+            xmin = 7.953990929705216 
+            xmax = 9.489990929705215 
+            text = "utterance" 
+        intervals [8]:
+            xmin = 9.489990929705215 
+            xmax = 9.953990929705217 
+            text = "silent" 
+        intervals [9]:
+            xmin = 9.953990929705217 
+            xmax = 10.401990929705217 
+            text = "utterance" 
+        intervals [10]:
+            xmin = 10.401990929705217 
+            xmax = 11.761990929705217 
+            text = "silent" 
+        intervals [11]:
+            xmin = 11.761990929705217 
+            xmax = 12.369990929705217 
+            text = "utterance" 
+        intervals [12]:
+            xmin = 12.369990929705217 
+            xmax = 12.881990929705218 
+            text = "silent" 
+        intervals [13]:
+            xmin = 12.881990929705218 
+            xmax = 13.937990929705215 
+            text = "utterance" 
+        intervals [14]:
+            xmin = 13.937990929705215 
+            xmax = 14.801990929705216 
+            text = "silent" 
+        intervals [15]:
+            xmin = 14.801990929705216 
+            xmax = 16.689990929705214 
+            text = "utterance" 
+        intervals [16]:
+            xmin = 16.689990929705214 
+            xmax = 17.201990929705214 
+            text = "silent" 
+        intervals [17]:
+            xmin = 17.201990929705214 
+            xmax = 18.449990929705216 
+            text = "utterance" 
+        intervals [18]:
+            xmin = 18.449990929705216 
+            xmax = 19.521990929705215 
+            text = "silent" 
+        intervals [19]:
+            xmin = 19.521990929705215 
+            xmax = 20.577990929705216 
+            text = "utterance" 
+        intervals [20]:
+            xmin = 20.577990929705216 
+            xmax = 22.929990929705216 
+            text = "silent" 
+        intervals [21]:
+            xmin = 22.929990929705216 
+            xmax = 24.769990929705216 
+            text = "utterance" 
+        intervals [22]:
+            xmin = 24.769990929705216 
+            xmax = 25.857990929705217 
+            text = "silent" 
+        intervals [23]:
+            xmin = 25.857990929705217 
+            xmax = 26.497990929705217 
+            text = "utterance" 
+        intervals [24]:
+            xmin = 26.497990929705217 
+            xmax = 27.665990929705217 
+            text = "silent" 
+        intervals [25]:
+            xmin = 27.665990929705217 
+            xmax = 29.185990929705216 
+            text = "utterance" 
+        intervals [26]:
+            xmin = 29.185990929705216 
+            xmax = 30.417990929705216 
+            text = "silent" 
+        intervals [27]:
+            xmin = 30.417990929705216 
+            xmax = 30.625990929705218 
+            text = "utterance" 
+        intervals [28]:
+            xmin = 30.625990929705218 
+            xmax = 31.18798185941043 
+            text = "silent" 

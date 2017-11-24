@@ -1,0 +1,78 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 37.379002267573696 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 37.379002267573696 
+        intervals: size = 16 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.8175011337868467 
+            text = "silent" 
+        intervals [2]:
+            xmin = 0.8175011337868467 
+            xmax = 1.3135011337868467 
+            text = "utterance" 
+        intervals [3]:
+            xmin = 1.3135011337868467 
+            xmax = 6.049501133786847 
+            text = "silent" 
+        intervals [4]:
+            xmin = 6.049501133786847 
+            xmax = 9.009501133786848 
+            text = "utterance" 
+        intervals [5]:
+            xmin = 9.009501133786848 
+            xmax = 11.841501133786846 
+            text = "silent" 
+        intervals [6]:
+            xmin = 11.841501133786846 
+            xmax = 11.969501133786846 
+            text = "utterance" 
+        intervals [7]:
+            xmin = 11.969501133786846 
+            xmax = 25.137501133786845 
+            text = "silent" 
+        intervals [8]:
+            xmin = 25.137501133786845 
+            xmax = 26.369501133786848 
+            text = "utterance" 
+        intervals [9]:
+            xmin = 26.369501133786848 
+            xmax = 27.889501133786847 
+            text = "silent" 
+        intervals [10]:
+            xmin = 27.889501133786847 
+            xmax = 28.049501133786848 
+            text = "utterance" 
+        intervals [11]:
+            xmin = 28.049501133786848 
+            xmax = 29.601501133786847 
+            text = "silent" 
+        intervals [12]:
+            xmin = 29.601501133786847 
+            xmax = 33.07350113378685 
+            text = "utterance" 
+        intervals [13]:
+            xmin = 33.07350113378685 
+            xmax = 34.081501133786844 
+            text = "silent" 
+        intervals [14]:
+            xmin = 34.081501133786844 
+            xmax = 35.66550113378685 
+            text = "utterance" 
+        intervals [15]:
+            xmin = 35.66550113378685 
+            xmax = 36.337501133786844 
+            text = "silent" 
+        intervals [16]:
+            xmin = 36.337501133786844 
+            xmax = 37.379002267573696 
+            text = "utterance" 

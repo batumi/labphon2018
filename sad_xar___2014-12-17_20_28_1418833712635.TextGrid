@@ -1,0 +1,66 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 15.201043083900228 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 15.201043083900228 
+        intervals: size = 13 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.4245215419501134 
+            text = "utterance" 
+        intervals [2]:
+            xmin = 1.4245215419501134 
+            xmax = 2.1445215419501134 
+            text = "silent" 
+        intervals [3]:
+            xmin = 2.1445215419501134 
+            xmax = 3.8885215419501136 
+            text = "utterance" 
+        intervals [4]:
+            xmin = 3.8885215419501136 
+            xmax = 6.528521541950114 
+            text = "silent" 
+        intervals [5]:
+            xmin = 6.528521541950114 
+            xmax = 8.912521541950113 
+            text = "utterance" 
+        intervals [6]:
+            xmin = 8.912521541950113 
+            xmax = 9.616521541950114 
+            text = "silent" 
+        intervals [7]:
+            xmin = 9.616521541950114 
+            xmax = 9.728521541950112 
+            text = "utterance" 
+        intervals [8]:
+            xmin = 9.728521541950112 
+            xmax = 11.056521541950115 
+            text = "silent" 
+        intervals [9]:
+            xmin = 11.056521541950115 
+            xmax = 12.400521541950113 
+            text = "utterance" 
+        intervals [10]:
+            xmin = 12.400521541950113 
+            xmax = 12.912521541950113 
+            text = "silent" 
+        intervals [11]:
+            xmin = 12.912521541950113 
+            xmax = 13.344521541950115 
+            text = "utterance" 
+        intervals [12]:
+            xmin = 13.344521541950115 
+            xmax = 14.864521541950115 
+            text = "silent" 
+        intervals [13]:
+            xmin = 14.864521541950115 
+            xmax = 15.201043083900228 
+            text = "utterance" 

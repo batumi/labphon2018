@@ -1,0 +1,130 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 34.40104308390023 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 34.40104308390023 
+        intervals: size = 29 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.9925215419501116 
+            text = "silent" 
+        intervals [2]:
+            xmin = 0.9925215419501116 
+            xmax = 1.1525215419501116 
+            text = "utterance" 
+        intervals [3]:
+            xmin = 1.1525215419501116 
+            xmax = 2.7205215419501116 
+            text = "silent" 
+        intervals [4]:
+            xmin = 2.7205215419501116 
+            xmax = 3.5685215419501115 
+            text = "utterance" 
+        intervals [5]:
+            xmin = 3.5685215419501115 
+            xmax = 5.824521541950111 
+            text = "silent" 
+        intervals [6]:
+            xmin = 5.824521541950111 
+            xmax = 5.968521541950111 
+            text = "utterance" 
+        intervals [7]:
+            xmin = 5.968521541950111 
+            xmax = 7.1205215419501116 
+            text = "silent" 
+        intervals [8]:
+            xmin = 7.1205215419501116 
+            xmax = 7.280521541950112 
+            text = "utterance" 
+        intervals [9]:
+            xmin = 7.280521541950112 
+            xmax = 8.512521541950111 
+            text = "silent" 
+        intervals [10]:
+            xmin = 8.512521541950111 
+            xmax = 8.688521541950113 
+            text = "utterance" 
+        intervals [11]:
+            xmin = 8.688521541950113 
+            xmax = 11.504521541950112 
+            text = "silent" 
+        intervals [12]:
+            xmin = 11.504521541950112 
+            xmax = 11.728521541950112 
+            text = "utterance" 
+        intervals [13]:
+            xmin = 11.728521541950112 
+            xmax = 13.328521541950114 
+            text = "silent" 
+        intervals [14]:
+            xmin = 13.328521541950114 
+            xmax = 13.48852154195011 
+            text = "utterance" 
+        intervals [15]:
+            xmin = 13.48852154195011 
+            xmax = 17.04052154195011 
+            text = "silent" 
+        intervals [16]:
+            xmin = 17.04052154195011 
+            xmax = 17.18452154195011 
+            text = "utterance" 
+        intervals [17]:
+            xmin = 17.18452154195011 
+            xmax = 19.96852154195011 
+            text = "silent" 
+        intervals [18]:
+            xmin = 19.96852154195011 
+            xmax = 20.112521541950112 
+            text = "utterance" 
+        intervals [19]:
+            xmin = 20.112521541950112 
+            xmax = 24.144521541950112 
+            text = "silent" 
+        intervals [20]:
+            xmin = 24.144521541950112 
+            xmax = 24.28852154195011 
+            text = "utterance" 
+        intervals [21]:
+            xmin = 24.28852154195011 
+            xmax = 25.64852154195011 
+            text = "silent" 
+        intervals [22]:
+            xmin = 25.64852154195011 
+            xmax = 25.792521541950112 
+            text = "utterance" 
+        intervals [23]:
+            xmin = 25.792521541950112 
+            xmax = 28.688521541950113 
+            text = "silent" 
+        intervals [24]:
+            xmin = 28.688521541950113 
+            xmax = 28.80052154195011 
+            text = "utterance" 
+        intervals [25]:
+            xmin = 28.80052154195011 
+            xmax = 29.376521541950112 
+            text = "silent" 
+        intervals [26]:
+            xmin = 29.376521541950112 
+            xmax = 29.55252154195011 
+            text = "utterance" 
+        intervals [27]:
+            xmin = 29.55252154195011 
+            xmax = 32.832521541950115 
+            text = "silent" 
+        intervals [28]:
+            xmin = 32.832521541950115 
+            xmax = 33.23252154195011 
+            text = "utterance" 
+        intervals [29]:
+            xmin = 33.23252154195011 
+            xmax = 34.40104308390023 
+            text = "silent" 

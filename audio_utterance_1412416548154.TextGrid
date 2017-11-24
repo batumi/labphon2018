@@ -1,0 +1,74 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 14.6129375 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 14.6129375 
+        intervals: size = 15 
+        intervals [1]:
+            xmin = 0 
+            xmax = 2.2264687500000004 
+            text = "utterance" 
+        intervals [2]:
+            xmin = 2.2264687500000004 
+            xmax = 3.92246875 
+            text = "silent" 
+        intervals [3]:
+            xmin = 3.92246875 
+            xmax = 4.94646875 
+            text = "utterance" 
+        intervals [4]:
+            xmin = 4.94646875 
+            xmax = 5.506468750000001 
+            text = "silent" 
+        intervals [5]:
+            xmin = 5.506468750000001 
+            xmax = 8.05046875 
+            text = "utterance" 
+        intervals [6]:
+            xmin = 8.05046875 
+            xmax = 9.33046875 
+            text = "silent" 
+        intervals [7]:
+            xmin = 9.33046875 
+            xmax = 9.84246875 
+            text = "utterance" 
+        intervals [8]:
+            xmin = 9.84246875 
+            xmax = 12.17846875 
+            text = "silent" 
+        intervals [9]:
+            xmin = 12.17846875 
+            xmax = 12.32246875 
+            text = "utterance" 
+        intervals [10]:
+            xmin = 12.32246875 
+            xmax = 13.042468750000001 
+            text = "silent" 
+        intervals [11]:
+            xmin = 13.042468750000001 
+            xmax = 13.186468750000001 
+            text = "utterance" 
+        intervals [12]:
+            xmin = 13.186468750000001 
+            xmax = 13.77846875 
+            text = "silent" 
+        intervals [13]:
+            xmin = 13.77846875 
+            xmax = 13.90646875 
+            text = "utterance" 
+        intervals [14]:
+            xmin = 13.90646875 
+            xmax = 14.35446875 
+            text = "silent" 
+        intervals [15]:
+            xmin = 14.35446875 
+            xmax = 14.6129375 
+            text = "utterance" 
