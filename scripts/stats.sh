@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# $ rsync -arv $HOST:/anonymouskartulispeechrecognition* ~/gismet/
+# $ rsync -aLrv $HOST:/anonymouskartulispeechrecognition* ~/gismet/
 
 FILE_COUNT=`ls -1 | wc -l`
 echo "Files $FILE_COUNT"
