@@ -56,12 +56,12 @@ Map of Georgia ([source](https://www.arcgis.com/home/webmap/viewer.html?webmap=5
 <img width="1307" alt="georgia" src="https://user-images.githubusercontent.com/196199/33235464-c36ab37a-d206-11e7-960d-02d28047e70b.png">
 
 
-Specrogram of "რა ტემპერატურაა დღეს?" with exagerated prosody
+Figure A: Specrogram of "რა ტემპერატურაა დღეს?" with careful yet natural prosody
 
 <img width="1307" alt="georgia" src="figures/anonymouskartulispeechrecognition1404679546310-kartuli_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2.png">
 
 
-Specrogram of "რა ტემპერატურაა დღეს?" with audience-less prosody
+Figure B: Specrogram of "რა ტემპერატურაა დღეს?" with audience-less prosody
 
 <img width="1307" alt="georgia" src="figures/anonymouskartulispeechrecognition1406620000430-kartuli_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2.png">
 
