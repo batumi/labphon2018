@@ -5,7 +5,7 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-geo/1.9.0/d3-geo.js"></script>
   <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-  <script src="http://enjalot.github.io/intro-d3/lib/topojson.v1.min.js"></script>
+  <script src="https://enjalot.github.io/intro-d3/lib/topojson.v1.min.js"></script>
   <style>
   body {
     background: #666;
@@ -186,7 +186,7 @@
       });
     });
 
-    d3.json("http://enjalot.github.io/intro-d3/maptime/data/world110.json", function(err, world) {
+    d3.json("https://enjalot.github.io/intro-d3/maptime/data/world110.json", function(err, world) {
       console.log("data", world)
       var countries = topojson.feature(world, world.objects.land);
       console.log("countries", countries)
