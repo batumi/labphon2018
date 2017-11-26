@@ -26,12 +26,12 @@
     fill: #d1c9b8;
     stroke: #000000;
   }
-
+/*
   circle {
     fill: #ffffff;
     stroke: #CC0A48;
     fill-opacity:0.2;
-  }
+  }*/
 
   .graticule {
     stroke: #CFCDCD;
@@ -43,8 +43,36 @@
   <pre id="hover"></pre>
   <script>
 
-    function filterRecordingAccuracy(item) {
+    function filterRecordingAccuracyByLocation(item) {
       return !!item.key.location && !!item.key.location.latitude && item.key.location.accuracy < 100;
+    }
+
+    function mapRecordingToFeaturesByLocation(item) {
+      return {
+        type: "Feature",
+        id: item.key.username,
+        recording: item.key,
+        geometry: {
+          type: "Point",
+          coordinates: [item.key.location.latitude, item.key.location.longitude]
+        }
+      };
+    }
+
+    function filterRecordingAccuracyByIP(item) {
+      return !!item.key.geo && !!item.key.geo.ll;
+    }
+
+    function mapRecordingToFeaturesByIP(item) {
+      return {
+        type: "Feature",
+        id: item.key.username,
+        recording: item.key,
+        geometry: {
+          type: "Point",
+          coordinates: item.key.geo.latitude.ll
+        }
+      };
     }
 
     var centerPoint = {
@@ -115,19 +143,14 @@
       d3.json("https://batumi.github.io/labphon2018/events_by_user_by_location.json", function(json) {
         console.log("json", json.rows);
         var recordings = json.rows
-          .filter(filterRecordingAccuracy)
-          .map(function(item) {
-            return {
-              type: "Feature",
-              id: item.key.username,
-              recording: item.key,
-              geometry: {
-                type: "Point",
-                coordinates: [item.key.location.latitude, item.key.location.longitude]
-              }
-            };
-          });
+          .filter(filterRecordingAccuracyByLocation)
+          .map(mapRecordingToFeaturesByLocation);
         console.log("recordings", recordings);
+
+        var recordingsByIP = json.rows
+          .filter(filterRecordingAccuracyByIP)
+          .map(mapRecordingToFeaturesByIP);
+        console.log("recordingsByIP", recordingsByIP);
 
         var geoPath = d3.geoPath()
           .projection(projection);
@@ -140,6 +163,20 @@
           .append("path")
           .attr("fill", "#900")
           .attr("stroke", "#999")
+          .attr("d", geoPath)
+          .on("mouseover", function(data) {
+            console.log("data", data);
+            document.getElementById("hover").innerHTML = "User: " + data.id + JSON.stringify(data.recording, null, 2);
+          });
+
+        var dataIPPoints = svg.append("g");
+
+        dataIPPoints.selectAll("path")
+          .data(recordingsByIP)
+          .enter()
+          .append("path")
+          .attr("fill", "#090")
+          .attr("stroke", "#fff")
           .attr("d", geoPath)
           .on("mouseover", function(data) {
             console.log("data", data);
@@ -177,19 +214,14 @@
       d3.json("https://batumi.github.io/labphon2018/events_by_user_by_location.json", function(json) {
         console.log("json", json.rows);
         var recordings = json.rows
-          .filter(filterRecordingAccuracy)
-          .map(function(item) {
-            return {
-              type: "Feature",
-              id: item.key.username,
-              recording: item.key,
-              geometry: {
-                type: "Point",
-                coordinates: [item.key.location.latitude, item.key.location.longitude, item.key.location.accuracy]
-              }
-            };
-          });
+          .filter(filterRecordingAccuracyByLocation)
+          .map(mapRecordingToFeaturesByLocation);
         console.log("recordings", recordings);
+
+        var recordingsByIP = json.rows
+          .filter(filterRecordingAccuracyByIP)
+          .map(mapRecordingToFeaturesByIP);
+        console.log("recordingsByIP", recordingsByIP);
 
         var geoPath = d3.geoPath()
           .projection(projection);
@@ -202,6 +234,20 @@
           .append("path")
           .attr("fill", "#900")
           .attr("stroke", "#999")
+          .attr("d", geoPath)
+          .on("mouseover", function(data) {
+            console.log("data", data);
+            document.getElementById("hover").innerHTML = "User: " + data.id + JSON.stringify(data.recording, null, 2);
+          });
+
+        var dataIPPoints = svg.append("g");
+
+        dataIPPoints.selectAll("path")
+          .data(recordingsByIP)
+          .enter()
+          .append("path")
+          .attr("fill", "#090")
+          .attr("stroke", "#fff")
           .attr("d", geoPath)
           .on("mouseover", function(data) {
             console.log("data", data);
