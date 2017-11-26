@@ -34,8 +34,8 @@
       .attr("id", "countries");
 
     var projection = d3.geoRobinson()
-      .scale(150)
-      .center([0, 27])
+      .scale(7000)
+      .center([-56, 42])
       .rotate([-100, 0])
       .translate([width / 2, height / 2]);
 
@@ -58,7 +58,7 @@
       }
     };
 
-    d3.json("https://batumi.github.io/geojson-georgian-regions/geo_regions.geojson", function(json) {
+    d3.json("https://batumi.github.io/geojson-georgian-regions/SubRegions_low_quality.json", function(json) {
       boundary
         .append("path")
         .datum(boundaryFeature)
@@ -68,6 +68,7 @@
         .data(json.features)
         .enter()
         .append("path")
+        .attr("fill", "#d1c9b8")
         .attr("d", path);
     });
   </script>
