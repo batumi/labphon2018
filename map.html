@@ -14,10 +14,14 @@
   svg {
     background: #999;
   }
+
+  #hover {
+    color: #fff;
+  }
   </style>
 </head>
 <body>
-  <div id="georgia"></div>
+  <pre id="hover"></pre>
   <script>
     var width = 1000;
     var height = 600;
@@ -58,7 +62,7 @@
       }
     };
 
-    d3.json("https://batumi.github.io/geojson-georgian-regions/SubRegions_low_quality.json", function(json) {
+    d3.json("https://batumi.github.io/geojson-georgian-regions/geo_regions.geojson", function(json) {
       boundary
         .append("path")
         .datum(boundaryFeature)
@@ -70,6 +74,41 @@
         .append("path")
         .attr("fill", "#d1c9b8")
         .attr("d", path);
+
+      d3.json("https://batumi.github.io/labphon2018/events_by_user_by_location.json", function(json) {
+        console.log("json", json.rows);
+        var recordings = json.rows.filter(function(item) {
+          return !!item.key.location && !!item.key.location.latitude;
+        }).map(function(item) {
+          return {
+            type: "Feature",
+            id: item.key.username,
+            recording: item.key,
+            geometry: {
+              type: "Point",
+              coordinates: [item.key.location.latitude, item.key.location.longitude]
+            }
+          };
+        });
+        console.log("recordings", recordings);
+
+        var geoPath = d3.geoPath()
+          .projection(projection);
+
+        var dataPoints = svg.append("g");
+
+        dataPoints.selectAll("path")
+          .data(recordings)
+          .enter()
+          .append("path")
+          .attr("fill", "#900")
+          .attr("stroke", "#999")
+          .attr("d", geoPath)
+          .on("mouseover", function(data) {
+            console.log("data", data);
+            document.getElementById("hover").innerHTML = "User: " + data.id + JSON.stringify(data.recording, null, 2);
+          });
+      });
     });
   </script>
 </body>
