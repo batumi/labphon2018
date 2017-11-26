@@ -23,8 +23,14 @@
 <body>
   <pre id="hover"></pre>
   <script>
-    var width = 1000;
-    var height = 600;
+    var center = {
+      longitude: -40,
+      latitude: -40,
+      rotation: 5
+    };
+
+    var width = 2000;
+    var height = 1000;
 
     var svg = d3.select("body")
       .append("svg")
@@ -38,10 +44,16 @@
       .attr("id", "countries");
 
     var projection = d3.geoRobinson()
-      .scale(7000)
+      .scale(5000)
       .center([-56, 42])
       .rotate([-100, 0])
       .translate([width / 2, height / 2]);
+
+    // var projection = d3.geoRobinson()
+    //   .scale(150)
+    //   .center([0,27])
+    //   .rotate([-100,0] )
+    //   .translate([width / 2, height / 2]);
 
     var path = d3.geoPath()
       .projection(projection);
@@ -74,6 +86,68 @@
         .append("path")
         .attr("fill", "#d1c9b8")
         .attr("d", path);
+
+      d3.json("https://batumi.github.io/labphon2018/events_by_user_by_location.json", function(json) {
+        console.log("json", json.rows);
+        var recordings = json.rows.filter(function(item) {
+          return !!item.key.location && !!item.key.location.latitude;
+        }).map(function(item) {
+          return {
+            type: "Feature",
+            id: item.key.username,
+            recording: item.key,
+            geometry: {
+              type: "Point",
+              coordinates: [item.key.location.latitude, item.key.location.longitude]
+            }
+          };
+        });
+        console.log("recordings", recordings);
+
+        var geoPath = d3.geoPath()
+          .projection(projection);
+
+        var dataPoints = svg.append("g");
+
+        dataPoints.selectAll("path")
+          .data(recordings)
+          .enter()
+          .append("path")
+          .attr("fill", "#900")
+          .attr("stroke", "#999")
+          .attr("d", geoPath)
+          .on("mouseover", function(data) {
+            console.log("data", data);
+            document.getElementById("hover").innerHTML = "User: " + data.id + JSON.stringify(data.recording, null, 2);
+          });
+      });
+    });
+
+    d3.json("http://enjalot.github.io/intro-d3/maptime/data/world110.json", function(err, world) {
+      console.log("data", world)
+      var countries = topojson.feature(world, world.objects.land);
+      console.log("countries", countries)
+
+      var width = 2000;
+      var height = 1000;
+
+      var projection = d3.geoOrthographic()
+        .scale(400)
+        .rotate([center.longitude, center.latitude, center.rotation])
+        .translate([width / 2, height / 2])
+        // .clipAngle(90);
+
+      var svg = d3.select('body')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+
+      var path = d3.geoPath()
+        .projection(projection);
+
+      svg.append("path")
+        .attr("d", path(countries))
+        .classed("land", true);
 
       d3.json("https://batumi.github.io/labphon2018/events_by_user_by_location.json", function(json) {
         console.log("json", json.rows);
