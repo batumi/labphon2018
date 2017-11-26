@@ -64,31 +64,31 @@ the temperature today?,'' with distinct prosodies.
 
 ## Figures
 
-(Map of Georgia)[https://batumi.github.io/labphon2018/map.html]
+[Map of Georgia](https://batumi.github.io/labphon2018/map.html)
 
 * Red: Android location with < 100 accuracy range
 * Blue: IP geolocation
 
-<img width="1307" alt="georgia" src="figures/georgia.png">
+[<img width="1307" alt="georgia" src="figures/georgia.png">](https://batumi.github.io/labphon2018/map.html)
 
-(Georgian diaspora)[https://batumi.github.io/labphon2018/map.html]
+[Georgian diaspora](https://batumi.github.io/labphon2018/map.html)
 
 * Red: Android location with < 100 accuracy range
 * Blue: IP geolocation
 
-<img width="1307" alt="georgia" src="figures/world1.png">
+[<img width="1307" alt="georgia" src="figures/world1.png">](https://batumi.github.io/labphon2018/map.html)
 
-<img width="1307" alt="georgia" src="figures/world2.png">
+[<img width="1307" alt="georgia" src="figures/world2.png">](https://batumi.github.io/labphon2018/map.html)
 
 
 Figure A: Specrogram of "რა ტემპერატურაა დღეს?" with careful yet natural prosody
 
-<img width="1307" alt="georgia" src="figures/anonymouskartulispeechrecognition1404679546310-kartuli_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2.png">
+[<img width="1307" alt="georgia" src="figures/anonymouskartulispeechrecognition1404679546310-kartuli_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2.png">](figures/anonymouskartulispeechrecognition1404679546310-kartuli_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2.mp3)
 
 
 Figure B: Specrogram of "რა ტემპერატურაა დღეს?" with audience-less prosody
 
-<img width="1307" alt="georgia" src="figures/anonymouskartulispeechrecognition1406620000430-kartuli_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2.png">
+[<img width="1307" alt="georgia" src="figures/anonymouskartulispeechrecognition1406620000430-kartuli_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2.png">](figures/anonymouskartulispeechrecognition1406620000430-kartuli_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2.mp3)
 
 
 ## References
@@ -145,37 +145,22 @@ Figure B: Specrogram of "რა ტემპერატურაა დღე�
 
 ```
 
-TODO
-
-* Ioana Chitoran georgian clusters
-
-
-
 ## Links
 
 ### Georgia maps
-
+* https://github.com/bumbeishvili/geojson-georgian-regions
 * https://www.arcgis.com/home/item.html?id=ec63e68fcf304c639859ebbc29d0a0f0
 * https://www.arcgis.com/home/item.html?id=538fc5649e2c463eb32fa1ce3fdfb51f
 * https://www.arcgis.com/home/item.html?id=7e9476ac913b481baf4d44fc5468cf97
 * https://www.arcgis.com/home/webmap/viewer.html?webmap=1adf3a2d0a434e60b4c64ff4fe74e48b
 * https://www.arcgis.com/home/item.html?id=ad7c8f1a0a3e465884d58f1a5309d191
 
-
 ### World map
 
 * https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Reference/MapServer
 
-
-
 ### D3 maps
 
+* https://github.com/maptimeBoston/d3-maptime/tree/gh-pages/projection
 * https://github.com/d3/d3-geo/blob/master/README.md#projections
 * http://maptimeboston.github.io/d3-maptime/#/86
-
-
-
-Georgian SMS
-
-http://www.sciencedirect.com/science/article/pii/S0271530914000172
-
