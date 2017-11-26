@@ -12,7 +12,7 @@
   }
 
   svg {
-    background: #999;
+    background: #fff;
   }
 
   #hover {
@@ -54,7 +54,7 @@
         recording: item.key,
         geometry: {
           type: "Point",
-          coordinates: [item.key.location.latitude, item.key.location.longitude]
+          coordinates: [item.key.location.longitude, item.key.location.latitude]
         }
       };
     }
@@ -70,7 +70,7 @@
         recording: item.key,
         geometry: {
           type: "Point",
-          coordinates: item.key.geo.latitude.ll
+          coordinates: [ item.key.geo.ll[1], item.key.geo.ll[0] ]
         }
       };
     }
@@ -97,7 +97,7 @@
 
     var projection = d3.geoRobinson()
       .scale(5000)
-      .center([-56, 42])
+      .center([-56, 44])
       .rotate([-100, 0])
       .translate([width / 2, height / 2]);
 
@@ -155,8 +155,20 @@
         var geoPath = d3.geoPath()
           .projection(projection);
 
-        var dataPoints = svg.append("g");
+        var dataIPPoints = svg.append("g");
+        dataIPPoints.selectAll("path")
+          .data(recordingsByIP)
+          .enter()
+          .append("path")
+          .attr("fill", "#009")
+          .attr("stroke", "#fff")
+          .attr("d", geoPath)
+          .on("mouseover", function(data) {
+            console.log("data", data);
+            document.getElementById("hover").innerHTML = "User: " + data.id + JSON.stringify(data.recording, null, 2);
+          });
 
+        var dataPoints = svg.append("g");
         dataPoints.selectAll("path")
           .data(recordings)
           .enter()
@@ -169,19 +181,6 @@
             document.getElementById("hover").innerHTML = "User: " + data.id + JSON.stringify(data.recording, null, 2);
           });
 
-        var dataIPPoints = svg.append("g");
-
-        dataIPPoints.selectAll("path")
-          .data(recordingsByIP)
-          .enter()
-          .append("path")
-          .attr("fill", "#090")
-          .attr("stroke", "#fff")
-          .attr("d", geoPath)
-          .on("mouseover", function(data) {
-            console.log("data", data);
-            document.getElementById("hover").innerHTML = "User: " + data.id + JSON.stringify(data.recording, null, 2);
-          });
       });
     });
 
@@ -226,28 +225,26 @@
         var geoPath = d3.geoPath()
           .projection(projection);
 
-        var dataPoints = svg.append("g");
-
-        dataPoints.selectAll("path")
-          .data(recordings)
+        var dataIPPoints = svg.append("g");
+        dataIPPoints.selectAll("path")
+          .data(recordingsByIP)
           .enter()
           .append("path")
-          .attr("fill", "#900")
-          .attr("stroke", "#999")
+          .attr("fill", "#009")
+          .attr("stroke", "#fff")
           .attr("d", geoPath)
           .on("mouseover", function(data) {
             console.log("data", data);
             document.getElementById("hover").innerHTML = "User: " + data.id + JSON.stringify(data.recording, null, 2);
           });
 
-        var dataIPPoints = svg.append("g");
-
-        dataIPPoints.selectAll("path")
-          .data(recordingsByIP)
+        var dataPoints = svg.append("g");
+        dataPoints.selectAll("path")
+          .data(recordings)
           .enter()
           .append("path")
-          .attr("fill", "#090")
-          .attr("stroke", "#fff")
+          .attr("fill", "#900")
+          .attr("stroke", "#999")
           .attr("d", geoPath)
           .on("mouseover", function(data) {
             console.log("data", data);

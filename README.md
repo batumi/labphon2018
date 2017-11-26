@@ -64,9 +64,21 @@ the temperature today?,'' with distinct prosodies.
 
 ## Figures
 
-Map of Georgia ([source](https://www.arcgis.com/home/webmap/viewer.html?webmap=538fc5649e2c463eb32fa1ce3fdfb51f))
+(Map of Georgia)[https://batumi.github.io/labphon2018/map.html]
 
-<img width="1307" alt="georgia" src="https://user-images.githubusercontent.com/196199/33235464-c36ab37a-d206-11e7-960d-02d28047e70b.png">
+* Red: Android location with < 100 accuracy range
+* Blue: IP geolocation
+
+<img width="1307" alt="georgia" src="figures/georgia.png">
+
+(Georgian diaspora)[https://batumi.github.io/labphon2018/map.html]
+
+* Red: Android location with < 100 accuracy range
+* Blue: IP geolocation
+
+<img width="1307" alt="georgia" src="figures/world1.png">
+
+<img width="1307" alt="georgia" src="figures/world2.png">
 
 
 Figure A: Specrogram of "რა ტემპერატურაა დღეს?" with careful yet natural prosody
