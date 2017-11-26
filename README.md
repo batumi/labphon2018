@@ -1,52 +1,65 @@
-# Variation in Georgian using large scale data collection
+# Exploring Phonetic Variation in Low-Resource Languages Using Large-Scale Data Collection: A Preliminary Look at Georgian Prosody
 
 
 ## Background
 
-Georgian is an understudied agglutinative language spoken in the Caucus
-Mountains in Eastern Europe. Georgian is a low resource language which has very
-little access to software and tools (such as spell checkers, dictionaries and
-search engine tokenizers) which would facilitate using Georgian in its written
-form. Georgian is spoken by 1.4 million speakers in the Republic of Georgia and
-members of the Georgian diaspora throughout the world. While Georgian is the
-national language of Georgia, most computer systems sold in Georgia are offered
-in Russian or in English, and because most search engines lack support for
-Georgian, users perform internet searches using Russian or English keywords
-\cite{Sherouse}.
+As technologies such as smartphones reach remote areas, the need for
+developing language technologies for smaller speaker populations has
+become more pressing. In this paper, we present methodology for low resource
+language documentation, and exemplify the usefulness of such techniques with a
+phonetic study of prosodic variability in Georgian, a Kartvelian agglutinative
+language spoken in the Caucasus Mountains on the border of Eastern Europe and
+Western Asia. Used by 1.4 million speakers in the Republic of Georgia (Figure
+1.) and members of the diaspora throughout the world, Georgian is an
+understudied language with very limited access to software and tools (e.g. spell
+checkers, electronic dictionaries and search engine tokenizers) which would
+facilitate its use in written form. While Georgian is the national language of
+Georgia, most computer systems sold in Georgia are offered in Russian or in
+English \cite{Sh}, and because most search engines lack support for Georgian,
+users perform internet searches using Russian or English keywords.
+
 
 ## Methodology
 
 In 2014 we created open source libraries and tools to facilitate usage of the
-Georgian language by Georgian speakers \cite{Dunham}. One of these tools was
-Gismet, an Android application which can be used by Georgian speakers to train
-their Android smartphones to recognize their speech \cite{Juhar} using
-PocketSphinx \cite{Huggins}. The software was made free, public and also open
-source on GitHub, a social coding site where developers can share and contribute
-to source code.
+Georgian language by Georgian speakers \cite{Du}. One of these tools was Gismet,
+an Android application which can be used by Georgian speakers to train their
+Android smartphones to recognize their speech using PocketSphinx \cite{Hu}. The
+software was made freely available to the public and also open source on GitHub,
+a social coding site where developers can share and contribute to the source
+code.
 
-
-
-Participants discover the application from the Google Play App Store. After
-installing the application, they are led through a tutorial where they record two-six
-utterances to train the application to their voice. The stimuli consisted of two
-SMS dictations, two web searches and two legal searches. After training, users can
-add additional training sentences or begin using the application anywhere in the
+Participants discover the application in the Google Play Store. After installing
+it, they are led through a tutorial where they record 2-6 utterances to train
+the application to their voice. The stimuli consist of two SMS dictations, two
+web searches and two legal searches. Following the training phase, users can add
+additional training sentences or begin using the application anywhere in the
 Android system where keyboard input is provided. The training utterances are
-uploaded to a central server where they are processed using Praat and the
-CMUSphinx language model toolkit \cite{Walker} to customize the acoustic model
-for the speaker. The stimuli are comprised of six utterances which were elicited
-durring fieldwork with three speakers in Batumi, Georgia.
+uploaded to a central server where they are processed using Praat \cite{Bo} and
+the CMUSphinx language model toolkit \cite{Wa}. The stimuli are comprised of six
+utterances which were elicited during fieldwork with three speakers in Batumi,
+Georgia in 2014.
 
 
 ## Data
 
-Since 2014 1,000 users have used the application to train the default language
-model to their voices. The resulting dataset contains only elicited training
-recordings, no user defined messages are included in the dataset. In this paper
-we discuss preliminary findings in the data collected and variation in the data
-along two directions, correlation of prosodic variation and GPS location of the
-recording, and prosodic variation across participants.
-
+Since 2014, over 1,000 users have used the application to train the default
+language model to their voices. The resulting dataset of elicited
+training recordings is similar to a dataset obtained in an experimental setting.
+The location of the recordings is determined via GPS technology, and informed
+consent for the anonymous analysis of their voices is required as part of the
+software installation process. This set-up enables us to conduct
+studies regarding various aspects of their speech production. Georgian has numerous
+ and diverse dialects, the phonetic variation in
+the contemporaneous form of the language has not been studied, with very few
+exceptions \cite{Ch, CGB}.  For a first `case study' based on our corpus, we
+have selected prosodic variation, specifically the realization of syllable timing
+patterns in short utterances. The prosodic properties of Georgian are of
+particular interest, given the ability of its consonants to form extensive
+clusters \cite{Ch} combined with vowel reduction \cite{Bu}.
+While the analysis of the entire corpus is underway, Figure 2. presents
+spectrograms of two speakers' production of the same short question ``What is
+the temperature today?,'' with distinct prosodies.
 
 
 ## Figures
