@@ -3,19 +3,50 @@
 
 ## Background
 
-Georgian is an understudied agglutinative language spoken in the Caucas Mountans in Eastern Europe. Geogian is a low resource language which has very little access to software and tools (such as spell checkers, dictionaries and search engine tokenizers) which would facilitate using Georgian in its written form. Georgian is spoken by 1.4 million speakers in the Republic of Georgia and members of the Georgian diaspora throughout the world. While Georgian is the national language of Georgia, most computer systems sold in Georgia are offered in Russian or in English, and because most search engines lack support for Geogian, users perform internet searches using Russian or English keywords (Sherouse, 2014).
-
+Georgian is an understudied agglutinative language spoken in the Caucus
+Mountains in Eastern Europe. Georgian is a low resource language which has very
+little access to software and tools (such as spell checkers, dictionaries and
+search engine tokenizers) which would facilitate using Georgian in its written
+form. Georgian is spoken by 1.4 million speakers in the Republic of Georgia and
+members of the Georgian diaspora throughout the world. While Georgian is the
+national language of Georgia, most computer systems sold in Georgia are offered
+in Russian or in English, and because most search engines lack support for
+Georgian, users perform internet searches using Russian or English keywords
+\cite{Sherouse}.
 
 ## Methodology
 
-In 2014 we created open source libraries and tools to facilitate usage of the Georgian language by Georgian speakers (Dunham et al 2014). One of these tools was Gismet, an Android application which can be used by Georgian speakers to train their Android smartphones to recognize their speech using PocketSphinx (Huggins-Daines 2006). The software was made free, public and also open source on GitHub, a social coding site where developers can share and contribute to source code.
+In 2014 we created open source libraries and tools to facilitate usage of the
+Georgian language by Georgian speakers \cite{Dunham}. One of these tools was
+Gismet, an Android application which can be used by Georgian speakers to train
+their Android smartphones to recognize their speech \cite{Juhar} using
+PocketSphinx \cite{Huggins}. The software was made free, public and also open
+source on GitHub, a social coding site where developers can share and contribute
+to source code.
 
-Participants discover the application from the Google Play App Store. After installing the application they are led through a tutorial where they record 2-6 utterances to train the application to their voice. The stimuli consisted of 2 SMS dictations, 2 web searches and 2 legal searches. After training users can add additional training sentences or begin using the application anywhere in the Android system where keyboard input is provided. The training utterances are uploaded to a central server where they are processed using Praat and the CMUSphinx language model toolkit (Walker et al 2004) to customize the acoustic model for the speaker. The stimuli are comprised of 7 utterances which were chosen among frequent SMS dictations in a corpora offered by 3 speakers in Batumi, Georgia.
+
+
+Participants discover the application from the Google Play App Store. After
+installing the application, they are led through a tutorial where they record two-six
+utterances to train the application to their voice. The stimuli consisted of two
+SMS dictations, two web searches and two legal searches. After training, users can
+add additional training sentences or begin using the application anywhere in the
+Android system where keyboard input is provided. The training utterances are
+uploaded to a central server where they are processed using Praat and the
+CMUSphinx language model toolkit \cite{Walker} to customize the acoustic model
+for the speaker. The stimuli are comprised of six utterances which were elicited
+durring fieldwork with three speakers in Batumi, Georgia.
 
 
 ## Data
 
-Since 2014 1,000 users have used the application to train the default language model to their voices. The resulting dataset contains only elicited training recordings, no user defined messages are included in the dataset. In this paper we discuss preliminary findings in the data collected and variation in the data along two directions, corelation of prosodic variation and GPS location of the recording, and prosodic variation across participants.
+Since 2014 1,000 users have used the application to train the default language
+model to their voices. The resulting dataset contains only elicited training
+recordings, no user defined messages are included in the dataset. In this paper
+we discuss preliminary findings in the data collected and variation in the data
+along two directions, correlation of prosodic variation and GPS location of the
+recording, and prosodic variation across participants.
+
 
 
 ## Figures
@@ -25,15 +56,14 @@ Map of Georgia ([source](https://www.arcgis.com/home/webmap/viewer.html?webmap=5
 <img width="1307" alt="georgia" src="https://user-images.githubusercontent.com/196199/33235464-c36ab37a-d206-11e7-960d-02d28047e70b.png">
 
 
-Specrogram of "რა ტემპერატურაა დღეს?" with exagerated intonation
+Specrogram of "რა ტემპერატურაა დღეს?" with exagerated prosody
 
 <img width="1307" alt="georgia" src="figures/anonymouskartulispeechrecognition1404679546310-kartuli_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2014-07-07_00_46_1404679582765_ra_temperaturaa_dghes_2.png">
 
 
-Specrogram of "რა ტემპერატურაა დღეს?" with natural intonation
+Specrogram of "რა ტემპერატურაა დღეს?" with audience-less prosody
 
 <img width="1307" alt="georgia" src="figures/anonymouskartulispeechrecognition1406620000430-kartuli_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2014-07-29_11_47_1406620054582_ra_temperaturaa_dghes_2.png">
-
 
 
 ## References

@@ -1,0 +1,146 @@
+\documentclass[12pt]{amsart}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[margin=1in]{geometry}
+\pagestyle{empty}
+\pagenumbering{gobble}
+\usepackage{tipa}
+\usepackage[colorlinks,allcolors=blue]{hyperref}
+
+\renewcommand{\refname}{Selected References}
+%\topmargin      =0.mm      % beyond 25.mm
+%\oddsidemargin  =2.mm       % beyond 25.mm
+%\evensidemargin =3.mm       % beyond 25.mm
+%\headheight =0.mm \headsep    =0.mm \textheight =240.mm \textwidth=160.mm
+\begin{document}
+\title{Variation in Georgian using large scale data collection}
+\maketitle
+
+\begin{small}
+\vspace{-0.2in}
+\begin{center}
+\end{center}
+%\vspace{0.15in}
+\end{small}
+
+Georgian is an understudied agglutinative language spoken in the Caucus
+Mountains in Eastern Europe. Georgian is a low resource language which has very
+little access to software and tools (such as spell checkers, dictionaries and
+search engine tokenizers) which would facilitate using Georgian in its written
+form. Georgian is spoken by 1.4 million speakers in the Republic of Georgia and
+members of the Georgian diaspora throughout the world. While Georgian is the
+national language of Georgia, most computer systems sold in Georgia are offered
+in Russian or in English, and because most search engines lack support for
+Georgian, users perform internet searches using Russian or English keywords
+\cite{Sherouse}.
+
+
+In 2014 we created open source libraries and tools to facilitate usage of the
+Georgian language by Georgian speakers \cite{Dunham}. One of these tools was
+Gismet, an Android application which can be used by Georgian speakers to train
+their Android smartphones to recognize their speech \cite{Juhar} using
+PocketSphinx \cite{Huggins}. The software was made free, public and also open
+source on GitHub, a social coding site where developers can share and contribute
+to source code.
+
+Participants discover the application from the Google Play App Store. After
+installing the application, they are led through a tutorial where they record two-six
+utterances to train the application to their voice. The stimuli consisted of two
+SMS dictations, two web searches and two legal searches. After training, users can
+add additional training sentences or begin using the application anywhere in the
+Android system where keyboard input is provided. The training utterances are
+uploaded to a central server where they are processed using Praat and the
+CMUSphinx language model toolkit \cite{Walker} to customize the acoustic model
+for the speaker. The stimuli are comprised of six utterances which were elicited
+durring fieldwork with three speakers in Batumi, Georgia.
+
+
+Since 2014 1,000 users have used the application to train the default language
+model to their voices. The resulting dataset contains only elicited training
+recordings, no user defined messages are included in the dataset. In this paper
+we discuss preliminary findings in the data collected and variation in the data
+along two directions, correlation of prosodic variation and GPS location of the
+recording, and prosodic variation across participants.
+
+
+\newpage
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.55\textwidth}
+        \includegraphics[width=\textwidth, height=0.25\textheight]{4}
+        %\caption{Digit span results}
+        \label{fig:mono}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth, height=0.25\textheight]{3}
+       % \caption{Corrected digit span}
+        \label{fig:bil}
+    \end{subfigure}
+    \caption{\footnotesize{\textit{\textsc{Left:} Map of Georgia}}}\label{fig:map}
+\end{figure}
+
+
+
+\newpage
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.55\textwidth}
+        \includegraphics[width=\textwidth, height=0.25\textheight]{4}
+        %\caption{Digit span results}
+        \label{fig:mono}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth, height=0.25\textheight]{3}
+       % \caption{Corrected digit span}
+        \label{fig:bil}
+    \end{subfigure}
+    \caption{\footnotesize{\textit{\textsc{Left:} Spectrogram of "რა ტემპერატურაა დღეს?" with exagerated prosody}}}\label{fig:prosody1}
+\end{figure}
+
+\newpage
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.55\textwidth}
+        \includegraphics[width=\textwidth, height=0.25\textheight]{4}
+        %\caption{Digit span results}
+        \label{fig:mono}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth, height=0.25\textheight]{3}
+       % \caption{Corrected digit span}
+        \label{fig:bil}
+    \end{subfigure}
+    \caption{\footnotesize{\textit{\textsc{Left:} Spectrogram of "რა ტემპერატურაა დღეს?" with natural prosody}}}\label{fig:prosody2}
+\end{figure}
+
+
+
+\bibliographystyle{IEEEtran}
+
+\begin{thebibliography}{17}
+
+\bibitem[1]{Dunham}Dunham, J., Chiodo, G., \& Horner, J. 2014. LingSync \& the Online Linguistic Database: New Models for the Collection and Management of Data for Language Communities, Linguists and Language Learners. \emph{Proceedings of the 2014 Workshop on the Use of Computational Methods in the Study of Endangered Languages}, 1, 23--33.
+
+
+\bibitem[2]{Juhar}Juh{\'a}r, J., Sta{\v{s}}, J., \& Hl{\'a}dek, D. 2012. Recent progress in development of language model for Slovak large vocabulary continuous speech recognition. \emph{InTech: New technologies-trends, innovations and research}.
+
+
+\bibitem[3]{Huggins}Huggins-Daines, D., Kumar, M., Chan, A., Black, A.,  Ravishankar, M., \& Rudnicky,  A. I. 2006. PocketSphinx: A free, real-time continuous speech recognition system for hand-held devices. \emph{Proceedings of ICASSP}.
+
+
+\bibitem[4]{Sherouse}Sherouse, P. 2014. Hazardous digits: Telephone keypads and Russian numbers in Tbilisi, Georgia. \emph{Language \& Communication}, 37, 1--11.
+
+
+\bibitem[5]{Walker}Walker, W., Lamere, P., Kwok, P., Raj, B., Singh, R., Gouvea, E., Wolf, P. \& Woelfel, J. 2004. Sphinx-4: A flexible open source framework for speech recognition. \emph{Sun Microsystems, Inc}.
+
+
+\end{thebibliography}
+
+\end{document}
