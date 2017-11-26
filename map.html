@@ -16,6 +16,9 @@
   }
 
   #hover {
+    position: fixed;
+    top: 0;
+    left: 0;
     color: #fff;
   }
 
@@ -39,6 +42,11 @@
 <body>
   <pre id="hover"></pre>
   <script>
+
+    function filterRecordingAccuracy(item) {
+      return !!item.key.location && !!item.key.location.latitude && item.key.location.accuracy < 100;
+    }
+
     var centerPoint = {
       longitude: -40,
       latitude: -40,
@@ -106,19 +114,19 @@
 
       d3.json("https://batumi.github.io/labphon2018/events_by_user_by_location.json", function(json) {
         console.log("json", json.rows);
-        var recordings = json.rows.filter(function(item) {
-          return !!item.key.location && !!item.key.location.latitude;
-        }).map(function(item) {
-          return {
-            type: "Feature",
-            id: item.key.username,
-            recording: item.key,
-            geometry: {
-              type: "Point",
-              coordinates: [item.key.location.latitude, item.key.location.longitude]
-            }
-          };
-        });
+        var recordings = json.rows
+          .filter(filterRecordingAccuracy)
+          .map(function(item) {
+            return {
+              type: "Feature",
+              id: item.key.username,
+              recording: item.key,
+              geometry: {
+                type: "Point",
+                coordinates: [item.key.location.latitude, item.key.location.longitude]
+              }
+            };
+          });
         console.log("recordings", recordings);
 
         var geoPath = d3.geoPath()
@@ -168,19 +176,19 @@
 
       d3.json("https://batumi.github.io/labphon2018/events_by_user_by_location.json", function(json) {
         console.log("json", json.rows);
-        var recordings = json.rows.filter(function(item) {
-          return !!item.key.location && !!item.key.location.latitude;
-        }).map(function(item) {
-          return {
-            type: "Feature",
-            id: item.key.username,
-            recording: item.key,
-            geometry: {
-              type: "Point",
-              coordinates: [item.key.location.latitude, item.key.location.longitude]
-            }
-          };
-        });
+        var recordings = json.rows
+          .filter(filterRecordingAccuracy)
+          .map(function(item) {
+            return {
+              type: "Feature",
+              id: item.key.username,
+              recording: item.key,
+              geometry: {
+                type: "Point",
+                coordinates: [item.key.location.latitude, item.key.location.longitude, item.key.location.accuracy]
+              }
+            };
+          });
         console.log("recordings", recordings);
 
         var geoPath = d3.geoPath()
