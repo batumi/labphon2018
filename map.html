@@ -18,12 +18,28 @@
   #hover {
     color: #fff;
   }
+
+  .land {
+    fill: #d1c9b8;
+    stroke: #000000;
+  }
+
+  circle {
+    fill: #ffffff;
+    stroke: #CC0A48;
+    fill-opacity:0.2;
+  }
+
+  .graticule {
+    stroke: #CFCDCD;
+    fill-opacity: 0.5;
+  }
   </style>
 </head>
 <body>
   <pre id="hover"></pre>
   <script>
-    var center = {
+    var centerPoint = {
       longitude: -40,
       latitude: -40,
       rotation: 5
@@ -85,7 +101,8 @@
         .enter()
         .append("path")
         .attr("fill", "#d1c9b8")
-        .attr("d", path);
+        .attr("d", path)
+        .classed("land", true);
 
       d3.json("https://batumi.github.io/labphon2018/events_by_user_by_location.json", function(json) {
         console.log("json", json.rows);
@@ -133,14 +150,14 @@
 
       var projection = d3.geoOrthographic()
         .scale(400)
-        .rotate([center.longitude, center.latitude, center.rotation])
+        .rotate([centerPoint.longitude, centerPoint.latitude, centerPoint.rotation])
         .translate([width / 2, height / 2])
         // .clipAngle(90);
 
-      var svg = d3.select('body')
-        .append('svg')
-        .attr('width', width)
-        .attr('height', height);
+      var svg = d3.select("body")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
 
       var path = d3.geoPath()
         .projection(projection);
